@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>id와 클래스 속성</title>
+<style type="text/css">
+	div {border: 1px solid black; margin-bottom: 16px; padding: 10px;}
+	#wrapper {
+	width: 600px; margin: 10px auto;
+	}
+	
+	
+</style>
+</head>
+<body>	
+	<!-- id는 조작은 목적으로, class는 스타일을 주려는 목적으로 사용된다. -->
+	<div id="wrapper">
+		<h1>아이디와 클래스 속성</h1>
+		
+		<h3>id 속성값의 활용</h3>
+		<div id="box-1"></div>
+		<div id="box-2"></div>
+		<div><input type="text" id="uesr-id" /></div>
+		<div><input type="text" id="uesr-name" /></div>
+	</div>
+	
+	<script type="text/javascript">
+		document.querySelector("#wrapper").style.color = 'red';
+	
+		document.querySelector("#box-1").textContent = "안녕하세요";
+		document.querySelector("#box-2").innerHTML = "<button>버튼</button>";
+		document.querySelector("#uesr-id").value = 'hong';
+		document.querySelector("uesr-name").value= '홍길동';
+	</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>테이블 태그</title>
+</head>
+<body>
+	<h1>테이블의 셀 병합</h1>
+	
+	<h2>가로방향 병합</h2>
+	<table border="1">
+		<tbody>
+			<tr>
+				<th>이름</th>
+				<th colspan="2">전화번호</th>
+			</tr>
+			<tr>
+				<th>홍길동</th>
+				<th>02-1234-1234</th>
+				<th>010-1234-5678</th>
+			</tr>
+		</tbody>
+	</table>
+	
+	<h2>세로방향 병합</h2>
+	<table border="1">
+		<tbody>
+			<tr>
+				<td>이름</td>
+				<td>홍길동</td>
+			</tr>
+			<tr>
+				<td rowspan="2">전화번호</td>
+				<td>02-1111-2222</td>
+			</tr>
+			<tr>
+				<td>010-1234-5678</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
