@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>속성 선택자</title>
+<style type="text/css">
+	/* 속성 선택자*/
+	
+	/* href속성값이 link1.html과 일치하는 태그를 선택한다.*/
+	[href="link1.html"] {background-color: yellow;}
+	
+	/* $가 있으면 "~로 끝나는"이라는 의미*/
+	[href$="jsp"] {background-color: green;}
+	
+	/* ^가 있으면 "~로 시작하는"이라는 의미*/
+	[href^="http"] {background-color: pink;}
+	
+	/* title속성값에 특정 글자가 포함되어 있는 태그를 선택*/
+	[title*="교육"] {background-color: lightgray;}
+	
+	/* title속성값에 다른 글자로 구별되는 별도의 단어(띄어쓰기)로 풍경이 포함되어 있는 태그를 선택*/
+	[title~="풍경"] {background-color: lightgreen;}
+	
+</style>
+</head>
+<body>
+	<h1>선택자 연습</h1>
+	
+	<div>
+		<a href="link1.html">링크1</a>
+		<a href="link2.html">링크2</a>
+		<a href="link3.jsp">링크3</a>
+		<a href="link4.jsp">링크4</a>
+		<a href="http://www.daum.net">링크3</a>
+		<a href="http://www.naver.com">링크4</a>
+		<a href="link5.html" title="한국기술교육대학교">링크5</a>
+		<a href="link6.html" title="교육대학교">링크6</a>
+		<a href="link7.html" title="바다 풍경 사진">링크7</a>
+		<a href="link8.html" title="바다풍경사진">링크8</a>
+	</div>
+	
+	<div>
+		<input type="text" name="username" /><br />
+		<input type="text" name="userid" /><br />
+	</div>
+<script type="text/javascript">
+	document.querySelector("input[name=username]").value="홍길동";
+	document.querySelector("input[name=userid]").value="hong";
+</script>	
+
+</body>
+</html>

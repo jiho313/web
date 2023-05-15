@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>z-index</title>
+<style type="text/css">
+/* 부모의 position이 relative, fixed, absolute 중 하나라면 자식의 position이 absolute여도
+	부모의 좌표를 기준으로 하고, 부모가 static이라면 자식은 화면의 최상단 왼쪽을
+	기준으로 해당 좌표만큼 이동된 곳에 위치한다. 다만 자식의 position이 relative라면,
+	부모의 포지션을 막론하고 부모의 좌표를 기준으로한다  */
+	.box {
+		position: relative;
+		width: 120px;
+		height: 120px;
+		background-color: lightgray;
+	}
+	
+	.box-1 {
+		position: absolute;
+		width: 120px;
+		height: 120px;
+		top: 50px;
+		left: 50px;
+		background-color: lightgreen;
+	}
+	
+	.box-2 {
+		position: absolute;
+		width: 120px;
+		height: 120px;
+		top: 100px;
+		left: 100px;
+		background-color: orange;
+		z-index: 1;
+	}
+	
+	.box-3 {
+		position: absolute;
+		width: 120px;
+		height: 120px;
+		top: 150px;
+		left: 150px;
+		background-color: red;
+	}
+	
+	
+</style>
+</head>
+<body>
+	<h1>z-index</h1>
+
+	<div class="box">
+		<div class="box-1"></div>
+		<div class="box-2"></div>
+		<div class="box-3"></div>
+	</div>
+		<p>14일 통신 업계에 따르면 모토로라는 새로운 폴더블폰 ‘레이저40울트라’(가칭)의 출시예정 국가에 한국을 포함시키고 3분기 출시를 계획 중이다. 이르면 다음달 초 미국·유럽 등 해외 주요국에 먼저 출시한 후 한국에는 삼성전자의 ‘갤럭시Z폴드5’와 ‘갤럭시Z플립5’가 판매되는 시점에 내놓을 것으로 보인다. 갤럭시Z 시리즈의 출시 시점은 통상 8월 언팩(신제품 공개) 행사 직후이며 올해는 언팩 개최일이 7월 말로 앞당겨질 가능성이 제기된다.
+
+출처 : https://www.sedaily.com/NewsView/29PKRPMPVK?OutLink=nstand</p>
+	<p>14일 통신 업계에 따르면 모토로라는 새로운 폴더블폰 ‘레이저40울트라’(가칭)의 출시예정 국가에 한국을 포함시키고 3분기 출시를 계획 중이다. 이르면 다음달 초 미국·유럽 등 해외 주요국에 먼저 출시한 후 한국에는 삼성전자의 ‘갤럭시Z폴드5’와 ‘갤럭시Z플립5’가 판매되는 시점에 내놓을 것으로 보인다. 갤럭시Z 시리즈의 출시 시점은 통상 8월 언팩(신제품 공개) 행사 직후이며 올해는 언팩 개최일이 7월 말로 앞당겨질 가능성이 제기된다.
+
+출처 : https://www.sedaily.com/NewsView/29PKRPMPVK?OutLink=nstand</p>
+	<p>14일 통신 업계에 따르면 모토로라는 새로운 폴더블폰 ‘레이저40울트라’(가칭)의 출시예정 국가에 한국을 포함시키고 3분기 출시를 계획 중이다. 이르면 다음달 초 미국·유럽 등 해외 주요국에 먼저 출시한 후 한국에는 삼성전자의 ‘갤럭시Z폴드5’와 ‘갤럭시Z플립5’가 판매되는 시점에 내놓을 것으로 보인다. 갤럭시Z 시리즈의 출시 시점은 통상 8월 언팩(신제품 공개) 행사 직후이며 올해는 언팩 개최일이 7월 말로 앞당겨질 가능성이 제기된다.
+
+출처 : https://www.sedaily.com/NewsView/29PKRPMPVK?OutLink=nstand</p>
+	<p>14일 통신 업계에 따르면 모토로라는 새로운 폴더블폰 ‘레이저40울트라’(가칭)의 출시예정 국가에 한국을 포함시키고 3분기 출시를 계획 중이다. 이르면 다음달 초 미국·유럽 등 해외 주요국에 먼저 출시한 후 한국에는 삼성전자의 ‘갤럭시Z폴드5’와 ‘갤럭시Z플립5’가 판매되는 시점에 내놓을 것으로 보인다. 갤럭시Z 시리즈의 출시 시점은 통상 8월 언팩(신제품 공개) 행사 직후이며 올해는 언팩 개최일이 7월 말로 앞당겨질 가능성이 제기된다.
+
+출처 : https://www.sedaily.com/NewsView/29PKRPMPVK?OutLink=nstand</p>
+	<p>14일 통신 업계에 따르면 모토로라는 새로운 폴더블폰 ‘레이저40울트라’(가칭)의 출시예정 국가에 한국을 포함시키고 3분기 출시를 계획 중이다. 이르면 다음달 초 미국·유럽 등 해외 주요국에 먼저 출시한 후 한국에는 삼성전자의 ‘갤럭시Z폴드5’와 ‘갤럭시Z플립5’가 판매되는 시점에 내놓을 것으로 보인다. 갤럭시Z 시리즈의 출시 시점은 통상 8월 언팩(신제품 공개) 행사 직후이며 올해는 언팩 개최일이 7월 말로 앞당겨질 가능성이 제기된다.
+
+출처 : https://www.sedaily.com/NewsView/29PKRPMPVK?OutLink=nstand</p>
+	<p>14일 통신 업계에 따르면 모토로라는 새로운 폴더블폰 ‘레이저40울트라’(가칭)의 출시예정 국가에 한국을 포함시키고 3분기 출시를 계획 중이다. 이르면 다음달 초 미국·유럽 등 해외 주요국에 먼저 출시한 후 한국에는 삼성전자의 ‘갤럭시Z폴드5’와 ‘갤럭시Z플립5’가 판매되는 시점에 내놓을 것으로 보인다. 갤럭시Z 시리즈의 출시 시점은 통상 8월 언팩(신제품 공개) 행사 직후이며 올해는 언팩 개최일이 7월 말로 앞당겨질 가능성이 제기된다.
+
+출처 : https://www.sedaily.com/NewsView/29PKRPMPVK?OutLink=nstand</p>
+	<p>14일 통신 업계에 따르면 모토로라는 새로운 폴더블폰 ‘레이저40울트라’(가칭)의 출시예정 국가에 한국을 포함시키고 3분기 출시를 계획 중이다. 이르면 다음달 초 미국·유럽 등 해외 주요국에 먼저 출시한 후 한국에는 삼성전자의 ‘갤럭시Z폴드5’와 ‘갤럭시Z플립5’가 판매되는 시점에 내놓을 것으로 보인다. 갤럭시Z 시리즈의 출시 시점은 통상 8월 언팩(신제품 공개) 행사 직후이며 올해는 언팩 개최일이 7월 말로 앞당겨질 가능성이 제기된다.
+
+출처 : https://www.sedaily.com/NewsView/29PKRPMPVK?OutLink=nstand</p>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>요소의 위치</title>
+<style type="text/css">
+	div {
+		box-sizing: border-box;
+		width: 200px;
+		height: 200px;
+	}
+	.parent {
+		background-color: lightgray;
+	}
+	/* relative - 무조건 부모 요소를 기준으로 원래 위치에서 30px, 왼쪽에서 30px만큼 이동된 곳에 위치한다. */
+	.relative-1 {
+		position: relative;
+		top: 30px;
+		left: 30px;
+		background-color: red;
+	}
+	.relative-2 {
+		position: relative;
+		top: 100px;
+		left: 600px;
+		background-color: gray;	
+	}
+	
+	/* absolute - 부모요소의 포지션이 relative, fixed, absolute인 경우
+				  부모요소를 기준으로 해당 좌표만큼 이동된 곳에 위치한다.*/
+	.absolute-1 {
+	/* 부모에 대한 절대 좌표 부모의 top이 기준이다. 
+		부모의 position이 relative나 fixed?*/
+		position: absolute;
+		top:30px;
+		left: 30px;
+		background-color: green;	
+	}
+	
+	/* absolute - 부모요소의 포지션이 static인 경우
+			 	  화면의 최상단 왼쪽을 기준으로 해당 좌표만큼 이동된 곳에 위치한다. 
+			 	  자식요소가 relative면 부모가 스태틱이어도 부모를 따라간다.*/
+			 	  
+	.absolute-2 {
+		position: absolute;
+		top:30px;
+		left: 30px;
+		background-color: blue;	
+	}
+	
+	.fixed-1 {
+		position: fixed;
+		top: 0;
+		right: 0;
+		background-color: orange;
+	}
+</style>
+</head>
+<body>
+	<h1>요소의 위치</h1>
+	
+	<h2>relative</h2>
+	<div class="parent">
+		<div class="relative-1"></div>
+	</div>
+	
+	<h2>absolute</h2>
+	<div class="parent">
+		<div class="relative-2">
+			<div class="absolute-1"></div>
+		</div>
+		<div class="absolute-2"></div>
+	</div>
+	
+	<h2>fixed-1</h2>
+	<div class="fixed-1"></div>
+	<p>14일 통신 업계에 따르면 모토로라는 새로운 폴더블폰 ‘레이저40울트라’(가칭)의 출시예정 국가에 한국을 포함시키고 3분기 출시를 계획 중이다. 이르면 다음달 초 미국·유럽 등 해외 주요국에 먼저 출시한 후 한국에는 삼성전자의 ‘갤럭시Z폴드5’와 ‘갤럭시Z플립5’가 판매되는 시점에 내놓을 것으로 보인다. 갤럭시Z 시리즈의 출시 시점은 통상 8월 언팩(신제품 공개) 행사 직후이며 올해는 언팩 개최일이 7월 말로 앞당겨질 가능성이 제기된다.
+
+출처 : https://www.sedaily.com/NewsView/29PKRPMPVK?OutLink=nstand</p>
+	<p>14일 통신 업계에 따르면 모토로라는 새로운 폴더블폰 ‘레이저40울트라’(가칭)의 출시예정 국가에 한국을 포함시키고 3분기 출시를 계획 중이다. 이르면 다음달 초 미국·유럽 등 해외 주요국에 먼저 출시한 후 한국에는 삼성전자의 ‘갤럭시Z폴드5’와 ‘갤럭시Z플립5’가 판매되는 시점에 내놓을 것으로 보인다. 갤럭시Z 시리즈의 출시 시점은 통상 8월 언팩(신제품 공개) 행사 직후이며 올해는 언팩 개최일이 7월 말로 앞당겨질 가능성이 제기된다.
+
+출처 : https://www.sedaily.com/NewsView/29PKRPMPVK?OutLink=nstand</p>
+	<p>14일 통신 업계에 따르면 모토로라는 새로운 폴더블폰 ‘레이저40울트라’(가칭)의 출시예정 국가에 한국을 포함시키고 3분기 출시를 계획 중이다. 이르면 다음달 초 미국·유럽 등 해외 주요국에 먼저 출시한 후 한국에는 삼성전자의 ‘갤럭시Z폴드5’와 ‘갤럭시Z플립5’가 판매되는 시점에 내놓을 것으로 보인다. 갤럭시Z 시리즈의 출시 시점은 통상 8월 언팩(신제품 공개) 행사 직후이며 올해는 언팩 개최일이 7월 말로 앞당겨질 가능성이 제기된다.
+
+출처 : https://www.sedaily.com/NewsView/29PKRPMPVK?OutLink=nstand</p>
+	<p>14일 통신 업계에 따르면 모토로라는 새로운 폴더블폰 ‘레이저40울트라’(가칭)의 출시예정 국가에 한국을 포함시키고 3분기 출시를 계획 중이다. 이르면 다음달 초 미국·유럽 등 해외 주요국에 먼저 출시한 후 한국에는 삼성전자의 ‘갤럭시Z폴드5’와 ‘갤럭시Z플립5’가 판매되는 시점에 내놓을 것으로 보인다. 갤럭시Z 시리즈의 출시 시점은 통상 8월 언팩(신제품 공개) 행사 직후이며 올해는 언팩 개최일이 7월 말로 앞당겨질 가능성이 제기된다.
+
+출처 : https://www.sedaily.com/NewsView/29PKRPMPVK?OutLink=nstand</p>
+	<p>14일 통신 업계에 따르면 모토로라는 새로운 폴더블폰 ‘레이저40울트라’(가칭)의 출시예정 국가에 한국을 포함시키고 3분기 출시를 계획 중이다. 이르면 다음달 초 미국·유럽 등 해외 주요국에 먼저 출시한 후 한국에는 삼성전자의 ‘갤럭시Z폴드5’와 ‘갤럭시Z플립5’가 판매되는 시점에 내놓을 것으로 보인다. 갤럭시Z 시리즈의 출시 시점은 통상 8월 언팩(신제품 공개) 행사 직후이며 올해는 언팩 개최일이 7월 말로 앞당겨질 가능성이 제기된다.
+
+출처 : https://www.sedaily.com/NewsView/29PKRPMPVK?OutLink=nstand</p>
+	<p>14일 통신 업계에 따르면 모토로라는 새로운 폴더블폰 ‘레이저40울트라’(가칭)의 출시예정 국가에 한국을 포함시키고 3분기 출시를 계획 중이다. 이르면 다음달 초 미국·유럽 등 해외 주요국에 먼저 출시한 후 한국에는 삼성전자의 ‘갤럭시Z폴드5’와 ‘갤럭시Z플립5’가 판매되는 시점에 내놓을 것으로 보인다. 갤럭시Z 시리즈의 출시 시점은 통상 8월 언팩(신제품 공개) 행사 직후이며 올해는 언팩 개최일이 7월 말로 앞당겨질 가능성이 제기된다.
+
+출처 : https://www.sedaily.com/NewsView/29PKRPMPVK?OutLink=nstand</p>
+	<p>14일 통신 업계에 따르면 모토로라는 새로운 폴더블폰 ‘레이저40울트라’(가칭)의 출시예정 국가에 한국을 포함시키고 3분기 출시를 계획 중이다. 이르면 다음달 초 미국·유럽 등 해외 주요국에 먼저 출시한 후 한국에는 삼성전자의 ‘갤럭시Z폴드5’와 ‘갤럭시Z플립5’가 판매되는 시점에 내놓을 것으로 보인다. 갤럭시Z 시리즈의 출시 시점은 통상 8월 언팩(신제품 공개) 행사 직후이며 올해는 언팩 개최일이 7월 말로 앞당겨질 가능성이 제기된다.
+
+출처 : https://www.sedaily.com/NewsView/29PKRPMPVK?OutLink=nstand</p>
+</body>
+</html>

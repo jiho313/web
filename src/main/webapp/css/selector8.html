@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>인접, 일반 형제 선택자</title>
+<style type="text/css">
+	div {border: 1px solid red; padding: 16px; margin: 10px 0;}	
+
+	/* 인접 형제 선택자 */
+	h3 + p {border: 2px solid red;}
+	
+	/* 일반 형제 선택자 */
+	h3 ~ p {background-color: yellow;}
+	
+</style>
+</head>
+<body>
+	<h1>선택자 연습</h1>
+	
+	<div id="box-1">
+		<h3>CSS 선택자 연습</h3>
+		<h4>형제 선택자 연습1</h4>
+		<p>다양한 CSS 선택자를 확인해보자</p>
+		<p>다양한 CSS 선택자를 확인해보자</p>
+		<p>다양한 CSS 선택자를 확인해보자</p>
+	</div>
+	
+	<div id="box-2">
+		<h3>CSS 선택자 연습</h3>
+		<p>다양한 CSS 선택자를 확인해보자</p>
+		<p>다양한 CSS 선택자를 확인해보자</p>
+		<p>다양한 CSS 선택자를 확인해보자</p>
+	</div>
+	
+	<p>다양한 CSS 선택자를 확인해보자</p>
+	<p>다양한 CSS 선택자를 확인해보자</p>
+</body>
+</html>
